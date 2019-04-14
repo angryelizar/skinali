@@ -1,0 +1,81 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background: white
+    z-index: 99
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 80px
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        margin-bottom: 5px
+        display: block
+        color: $text-color
+        font-size: 19px
+        font-weight: 400
+        text-transform: uppercase
+        +bold
+        text-decoration: none
+    &__small-text
+        display: block
+        font-size: 14px
+        color: $text-color-light
+        text-decoration: none
+.menu
+    position: fixed
+    z-index: 0
+    top: 80px
+    left: 0
+    padding-bottom: 16px
+    padding-top: 16px
+    background-color: $primary
+    width: 100%
+    transition: 0.2s
+    transform: translateY(-100%)
+    &_active
+        transform: translateY(0)
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__link
+        text-decoration: none
+        font-size: 17px
+        color: white
+        text-transform: uppercase
+    &-button
+       display: flex
+       flex-direction: column
+       align-items: center 
+       justify-content: center
+
+       background-color: transparent
+       border: none
+       border-right: 1px solid rgba(#510bba, 0.1) 
+       border-left: 1px solid rgba(#510bba, 0.1) 
+       height: 80px
+       width: 70px
+       &__line
+           display: block
+           width: 20px
+           height: 3px
+           background-color: #5381e1
+           margin: 2px 0
+.logo
+    &__text
+        margin-bottom: 5px
+        display: block
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        +bold
+    &__description
+        display: block
+        color: $text-color-light
+        font-size: 14px
+        font-weight: 300
