@@ -37,9 +37,22 @@ body
             height: 30px
             border: 1px solid #dddddd
             margin-right: 20px
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        text-transform: uppercase
+        text-align: center
+        +bold
+    &__title
+        margin-bottom: 100px
 @media (max-width: 576px)
     .button-o
         font-size: 12px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
 @media (max-width: 320px)
     .button-o
         font-size: 10px
