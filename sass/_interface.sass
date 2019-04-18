@@ -1,6 +1,8 @@
 body
     +light
     color: $text-color
+img
+    max-width: 100%
 .button-o
     border: 2px solid $primary
     background: white
@@ -8,6 +10,7 @@ body
     text-transform: uppercase
     color: $primary
     font-size: 12px
+    text-decoration: none
     +bold
 .button
     border: none
@@ -15,6 +18,7 @@ body
     color: white
     padding: 25px 45px
     text-transform: uppercase
+    text-decoration: none
     +bold
 .bg-secondary
     background: $bg-secondary
@@ -44,6 +48,7 @@ body
         text-transform: uppercase
         text-align: center
         +bold
+        margin-bottom: 100px
     &__title
         margin-bottom: 100px
 @media (max-width: 576px)
@@ -56,3 +61,24 @@ body
 @media (max-width: 320px)
     .button-o
         font-size: 10px
+.fitting-button
+    font-size: 11px
+    padding: 10px
+    text-transform: uppercase
+    color: $primary
+    background: white
+    border: none
+    height: 30px
+.add-button
+    font-size: 11px
+    padding: 10px
+    text-transform: uppercase
+    color: white
+    background: lighten($primary, 10%)
+    border: none
+    height: 30px
+.like-button
+    background: $primary
+    border: none
+    height: 30px
+    width: 30px
