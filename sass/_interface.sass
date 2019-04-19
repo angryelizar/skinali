@@ -12,6 +12,8 @@ img
     font-size: 12px
     text-decoration: none
     +bold
+    &:hover
+        cursor: pointer
 .button
     border: none
     background-color: $primary
@@ -20,6 +22,8 @@ img
     text-transform: uppercase
     text-decoration: none
     +bold
+    &:hover
+        cursor: pointer
 .bg-secondary
     background: $bg-secondary
 .input
@@ -59,8 +63,10 @@ img
         &-title
             font-size: 24px
 @media (max-width: 320px)
-    .button-o
+    .button
         font-size: 10px
+        &-o
+            font-size: 10px
 .fitting-button
     font-size: 11px
     padding: 10px
