@@ -1,0 +1,27 @@
+.contacts
+    background-color: rgba(#f6f7f9, 0.5)
+    &-block
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        &__item
+            text-align: center
+    &__image
+        margin-bottom: 25px
+    &__text
+        font-size: 16px
+    &__adress
+        font-style: normal
+    &__link
+        text-decoration: none
+        color: #000000
+@media (max-width: 768px)
+    .contacts
+        &-block
+            &__item
+                width: 100%
+                margin-bottom: 30px
+        &__adress
+            max-width: 200px
+            margin: auto
