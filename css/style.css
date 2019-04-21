@@ -733,7 +733,7 @@ img {
   bottom: -80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -747,6 +747,69 @@ img {
 @media (max-width: 400px) {
   .price-block__card {
     margin: 10px;
+  }
+}
+
+.steps {
+  text-align: center;
+  background: #f1f1f1;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.step {
+  position: relative;
+  color: #000000;
+}
+
+.step__title {
+  font-size: 18px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.step__text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.step:last-child:before {
+  display: none;
+}
+
+.step:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgba(126, 123, 120, 0.5);
+  display: block;
+  position: absolute;
+  top: 28.4%;
+  right: -69%;
+}
+
+@media (max-width: 991px) {
+  .step {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
