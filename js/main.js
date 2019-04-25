@@ -31,4 +31,14 @@ $(window).load(function() {
         return false;
     });
     $('input[type="tel"]').mask("+7(999) 999-99-99");
+    // Показывать карту только при докрутки до неё
+    var reviews = $('.reviews');
+    var reviewsTop = reviews.offset().top;
+    $(window).bind('scroll', function(){
+        var windowTop = $(this).scrollTop();
+        if (windowTop > reviewsTop); {
+            $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5d1b89079d50999e8d450f332c420b5b15953d7a3f3a0b321d2f674b5510e78e&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>')
+            $(window).unbind('scroll')
+        }
+    });
 });
